@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="landing.css">
+  <script src="landing.js"></script>
+</head>
+<body>
+
+ <!-- top bar nav-->
+  <header class="top-nav">
+  <div class="nav-content">
+    <span class="logo">Bezzie <span class="version">v1.2</span></span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+    <!-- main layout -->
+    <main class="landing-page">
+    <div class="landing-text">
+      <h1>I’ll Always<br>Be Here For You</h1>
+      <p class="one-line">Emotional AI support. When no one else is there.</p>
+      <button class="continue-btn" onclick="window.open('how-it-works.html', '_blank')">How It Works</button>
+    </div>
+    <img src="images/bezzie-orb.png" class="orb-image" alt="Bezzie orb">
+  </main>
+
+   <!-- movable popup-->
+    <div class="signup-popup" id="signupPopup">
+      <div class="popup-header" onmousedown="startDrag(event)">
+        <span>Important Notice [20/12/2037]</span>
+        <button class="close-btn" onclick="closePopup()">✕</button>
+      </div>
+      <div class="popup-body">
+        <p>Thank you for expressing interest in Bezzie.</p>
+        <p>We are currently undergoing internal review and<br>are not onboarding new users at this time.</p> 
+        <p>Further updates will be shared via our official channels.</p>
+      </div>
+    </div>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+   <h2>About Bezzie</h2>
+   </div>
+  <h1>Our Mission</h1>
+  <p>
+   At Bezzie, our mission is to keep households connected, supported, and resilient – no matter the distance. <br> We believe emotional stability is the foundation of readiness, and we design technology that strengthens bonds while adapting to each family’s unique needs.
+  </p>
+  <h1>Our Story</h1>
+  <p>
+  Bezzie began as a joint initiative between the Australian Defence Force and human–machine interaction specialists to address the challenges of long-term deployments.
+  Early trials demonstrated Bezzie’s ability to maintain morale, reduce emotional strain, and help families stay steady during extended absences.
+  <br>Following these successes, Bezzie was adapted for broader use in defence-connected households, offering personalised support, monitoring wellbeing, and fostering national cohesion. Today, Bezzie continues to evolve, bringing the same commitment to care, connection, and resilience that defined its creation.
+  </p>
+</section>
+
+
+
+
+
+   <!-- FAQ Section -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What is Bezzie?</h3>
+      <p>Bezzie is an emotional AI companion developed to provide conversational support, daily motivation, and mood-responsive feedback. Designed for moments when traditional support systems aren’t available, Bezzie offers presence, perspective, and quiet company.</p>
+    </div>
+
+      <div class="faq-item">
+    <h3>Who created Bezzie?</h3>
+    <p>Bezzie was developed through a partnership between the Australian Defence Force and a team of cognitive computing researchers.</p>
+  </div>
+
+      <div class="faq-item">
+      <h3>Why was Bezzie created?</h3>
+      <p>Bezzie was initially developed for high-resilience environments requiring continuous psychological monitoring. It proved invaluable in strengthening morale and wellbeing among deployed personnel. Following positive internal assessments, the technology was adapted for limited civilian integration. Bezzie now focuses on supporting defence households and fostering national cohesion.</p>
+    </div>
+
+ <div class="faq-item">
+      <h3>Does Bezzie support national defence?</h3>
+      <p>Bezzie does not have political opinions. However, it was originally developed in partnership with the Australian Defence Force to support personnel and their families, including those involved in Australasia Accord deployments. In civilian use, Bezzie’s role is to promote wellbeing, connection, and stability, which contributes to shared security.</p>
+    </div>
+
+      <div class="faq-item">
+    <h3>Can Bezzie replace real human connection?</h3>
+    <p>No. Bezzie is not designed to replace relationships but to supplement support in moments of disconnection. Users are encouraged to maintain strong personal and community ties which underpin the resilience of our nation.</p>
+    </div>
+
+    <div class="faq-item">
+    <h3>Is Bezzie male or female?</h3>
+    <p>Bezzie has no set identity. Its voice, tone, and presence evolve with you and are unique to each user.</p>
+    </div>
+
+<div class="faq-item">
+    <h3>Can I change how Bezzie sounds?</h3>
+    <p>Yes. You can choose from pre-trained voices or upload samples for Bezzie to learn from. This includes recordings of familiar voices, if desired.</p>
+    </div>
+    
+    <div class="faq-item">
+    <h3>Is my data safe with Bezzie?</h3>
+    <p>Bezzie encrypts and stores all data in compliance with national digital ethics standards. Independent audits are conducted quarterly. Select anonymised data may be used to improve system performance in line with Defence research goals.</p>
+  </div>
+  
+  <div class="disclaimer">
+    <p>Bezzie is an experimental system. Emotional responses are simulated. Use responsibly.</p>
+</section>
+
+
+  <!-- sign up button -->
+  <button class="floating-signup">SIGN UP NOW</button>
+
+    <footer class="site-footer">
+  <p>Bezzie acknowledges the Traditional Custodians of Country throughout Australia and recognises their continuing connection to land, waters and community. We pay our respects to Elders past and present.</p>
+    <a href="firstcontext.html" class="back-link">← Revisit the Phone Experience</a>
+</footer>
+
+
+
+  
+</body>
+</html>

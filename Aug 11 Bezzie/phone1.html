@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+        <link rel="stylesheet" href="phone1.css">
+        <script src="phone1.js"></script>
+    </head>
+<body>
+
+<div class="instructions">
+    <p class="phone-instruction"><em>Hover over the eye icons on the phone to reveal more.<br>Click Continue when done.</em></p>
+</div>
+
+    <div class="layout-wrapper">
+        <div class="phone-wrapper">
+        <div class="phone-container">
+            <img src="images/phone-day-1-mock-up.png" class="phone-img"> 
+
+            <!--hotspot 1: first msg (wollongong)-->
+            <div class="hotspot" id="hotspot1" onclick="showImage('wollongong')">
+            </div>
+
+            <!--hotspot 2: third msg (bezzie ad)-->
+            <div class="hotspot" id="hotspot2"onclick="showImage('bezzie-ad')">
+            </div>
+
+            <!--hotspot 3: fourth msg (lightstrip)-->
+            <div class="hotspot" id="hotspot3"onclick="showImage('lightstrip')">       
+            </div>
+        <div class="popup-wrapper">
+        <!--hidden images (wollongong)-->
+        <div class="pop-up-image" id="wollongong">
+            <button class="close-btn" onclick="closeImage('wollongong')">✕</button>
+            <img src="images/wollongong.png">
+            <p class="popup-caption">Naomi snapped this while exploring Wollongong alone.</p>
+        </div>
+
+        <!--hidden images (bezzie ad)-->
+        <div class="pop-up-image" id="bezzie-ad">
+            <button class="close-btn" onclick="closeImage('bezzie-ad')">✕</button>
+            <img src="images/Bezzie-Ad-Fake.png">
+            <p class="popup-caption">Early Australian Defence Force recruitment ad featuring Bezzie (pre-release v0.6).</p>
+        </div>
+
+        <!--hidden images (lightstrip)-->
+        <div class="pop-up-image" id="lightstrip">
+            <button class="close-btn" onclick="closeImage('lightstrip')">✕</button>
+            <img src="images/lightstrip.jpg">
+            <p class="popup-caption">The ambient strip lit up when Naomi first spoke to Bezzie.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--continue button-->
+    <div class="continue-container">
+        <button class="continue-btn" id="continuetophone2">Continue</button>
+</div>
+

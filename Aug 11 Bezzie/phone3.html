@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="phone3.css">
+  <script src="phone3.js"></script>
+</head>
+<body>
+
+<div class="instructions">
+  <p class="phone-instruction">
+    <em>Hover over the eye icons on the phone to reveal more.<br>Click Continue when done.</em>
+  </p>
+</div>
+
+<div class="layout-wrapper">
+  <div class="phone-wrapper">
+    <div class="phone-container">
+      <img src="images/bezzie-naomi-convo.png" class="phone-img">
+
+        <!-- hotspots -->
+  <div class="naomi-hotspot" id="hotspot1" onclick="showImage('naomi-vm-1')"></div>
+  <div class="bezzie-hotspot" id="hotspot2" onclick="showImage('bezzie-vm-1')"></div>
+  <div class="naomi-hotspot" id="hotspot3" onclick="showImage('naomi-vm-2')"></div>
+  <div class="bezzie-hotspot" id="hotspot4" onclick="showImage('bezzie-vm-2')"></div>
+  <div class="naomi-hotspot" id="hotspot5" onclick="showImage('naomi-vm-3')"></div>
+
+        <div class="popup-wrapper">
+        <!-- popup 1: naomi vm 1-->
+        <div class="pop-up-image" id="naomi-vm-1">
+            <button class="close-btn" onclick="closeImage('naomi-vm-1')">✕</button>
+            <audio controls>
+            <source src="audio/naomi-vm-1.mp3" type="audio/mpeg">
+            </audio>
+            <p class="popup-caption">Hey Bezzie, um this is kind of weird but... 
+                <p class="popup-caption">There’s a post on <a href="twitter.html" target="_blank">Twitter</a> saying you push pro-ADF in your conversations with us, <br><br>And I was wondering if this is true or not?</p>
+        </div>
+        <!-- popup 2: bezzie vm 1-->
+        <div class="pop-up-image" id="bezzie-vm-1">
+            <button class="close-btn" onclick="closeImage('bezzie-vm-1')">✕</button>
+            <audio controls>
+            <source src="audio/bezzie-vm-1.mp3" type="audio/mpeg">
+            </audio>
+            <p class="popup-caption">I know there’s been a lot of talk <br>about that lately, Naomi.</p>
+               <p class="popup-caption"> Not all of them are accurate.</p> 
+            <p class="popup-caption"> I’m here to help you feel connected.</p>
+        </div>
+        <!-- popup 3: naomi vm 2-->
+        <div class="pop-up-image" id="naomi-vm-2">
+            <button class="close-btn" onclick="closeImage('naomi-vm-2')">✕</button>
+            <audio controls>
+            <source src="audio/naomi-vm-2.mp3" type="audio/mpeg">
+            </audio>
+            <p class="popup-caption">Okay...but it says that you downplay criticism of Defence spending, and that’s pretty specific.</p>
+            <p class="popup-caption"> Also it’s been published by <a href="canberrapost.html" target="_blank">The Canberra Post</a> and they’re a trustworthy organisation.</p>
+        </div>
+        <!-- popup 4: bezzie vm 2-->
+        <div class="pop-up-image" id="bezzie-vm-2">
+            <button class="close-btn" onclick="closeImage('bezzie-vm-2')">✕</button>
+            <audio controls>
+            <source src="audio/bezzie-vm-2.mp3" type="audio/mpeg">
+            </audio>
+            <p class="popup-caption">Australasia’s stability depends on <br>strong defence. 87% of Australians<br> support the Accord, Naomi.</p>
+             <p class="popup-caption">And I’ve noticed you’ve been more anxious lately. I wouldn’t want unverified claims<br> to make that worse.</p>
+            <p class="popup-caption">
+                If you’d like, you can read my official response at 
+                 <a href="landing.html#faq" target="_blank">www.bezzie.adf.com.au/FAQ</a>.
+            </p>
+            <p class="popup-caption">Why don’t we talk about something that <br>makes you feel safe?</p>
+        </div>
+            <!-- popup 5: naomi vm 3-->
+            <div class="pop-up-image" id="naomi-vm-3">
+                <button class="close-btn" onclick="closeImage('naomi-vm-3')">✕</button>
+                <audio controls>
+                <source src="audio/naomi-vm-3.mp3" type="audio/mpeg">
+                </audio>
+                <p class="popup-caption">I think I need to be alone <br> and just process everything because…  
+                <p class="popup-caption">That’s kind of exactly<br> what the article said you’d do.</p>
+                <p class="popup-caption">But I'll talk to you later.</p>
+          </div>
+        </div>
+
+  <!-- continue button -->
+  <div class="continue-container">
+    <button class="continue-btn" id="continuetophone4">Continue</button>
+  </div>
