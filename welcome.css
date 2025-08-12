@@ -1,0 +1,160 @@
+/* background gradient */
+html, body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(18% 28% at 24% 50%, #FFAAAEFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #FDAFAFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #D83727FF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, rgb(252, 149, 149) 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, rgb(229, 156, 156) 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, rgb(223, 111, 111) 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #F6A69DFF 34%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #CA3D54F5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #F17E64F5 24%, #073AFF00 100%),linear-gradient(125deg, #FF4E7CFF 1%, #C32323FF 99%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+    /*cursor image*/
+    body {
+    cursor: url('images/heartcursor.png'), auto;
+    }
+}
+
+
+.loading{
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    position:absolute;
+}
+
+
+/* wave design */
+.object{
+    position: relative;
+    width: 6px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.418);
+    margin: 0 3px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+    animation: load 0.9s infinite;
+
+}
+
+/* more waves */
+.object:nth-child(2){
+    animation-delay: 0.1s;
+}
+.object:nth-child(3){
+    animation-delay: 0.2s;
+}
+.object:nth-child(4){
+    animation-delay: 0.3s;
+}
+.object:nth-child(5){
+    animation-delay: 0.4s;
+}
+.object:nth-child(6){
+    animation-delay: 0.5s;
+}
+.object:nth-child(7){
+    animation-delay: 0.6s;
+}
+.object:nth-child(8){
+    animation-delay: 0.7s;
+}
+
+@keyframes load{
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 50px;
+    }
+    100%{
+        height: 0;
+    }
+
+}
+
+
+/* WELCOME HOME */
+.bezzie-welcome{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    color: rgb(247, 247, 247);  
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s;
+      transform: translateY(-40px);
+}
+
+.bezzie-system-tag {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d9c7c7c7;
+    margin-bottom: 50px;
+    font-family: 'DINCondensed', sans-serif;
+}
+
+.bezzie-support {
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(247, 247, 247);
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+
+.intro{ /*she messages...world within*/
+    font-size: 20px;
+    color: #f0e9e9;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    
+}
+
+.bezzie-button {
+    padding: 16px 38px;
+    font-size: 22px;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: -30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bezzie-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+@font-face {
+            font-family: 'Manrope'; 
+            src: url('fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+}
